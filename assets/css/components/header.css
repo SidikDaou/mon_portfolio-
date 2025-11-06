@@ -1,0 +1,127 @@
+.head__page{
+    width: 100%;
+    padding: 20px 0;
+    background-color: #f1f1f1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.head__page:hover {
+    background: #fff;
+    box-shadow: none;
+    height: auto;
+    padding: 10px;
+}
+
+/* Title parts*/
+.head__page--title{
+    color: var(--txt-color);
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+
+.head__page:hover .head__page--title, .head__page--title:hover  {
+    background-color: black;
+    color: #f1f1f1;
+    border-radius: 150px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    box-shadow: 5px 5px 10px #333;
+    width: 100px;
+    height: 100px;
+    border-radius: 30%70%70%30%/30%30%70%70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Navigation parts*/
+.head__page-nav {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.head__page:hover .head__page-nav,
+.head__page-nav:hover {
+    opacity: 1;
+    transform: translateY(0);
+    background-color:  #f1f1f1;;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+/* Navigation lists parts*/
+.head__page-nav .head__page-nav--ul .nav-ul-list .nav-ul-list--link{
+    color: var(--txt-color);
+    font-weight: var(--font-gros);
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.head__page-nav .head__page-nav--ul .nav-ul-list .nav-ul-list--link:hover{
+    background-color: black;
+    color: #f1f1f1;
+    border-radius: 10px;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    box-shadow: 5px 5px 10px #333;
+}
+
+
+.bars{
+    display:none;
+}
+
+/* Responsive*/
+
+@media (max-width:850px) {
+    
+.head__page-nav  .head__page-nav--ul {
+    display:none; 
+    position: absolute;
+    flex-direction: column;
+    justify-self: start;
+    gap: 0;
+    left: 40px;
+    top:0;
+    background-color: rgb(134, 130, 130);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 0;
+}  
+
+.head__page:hover .head__page-nav,
+.head__page-nav:hover {
+    padding: 0;
+}
+
+
+.bars{
+    display: block;
+    margin: 30px 40px 0 0;
+    font-size: 25px;
+}
+
+.head__page:hover .bars,
+.bars:hover{
+    opacity: 0;
+}
+
+
+.head__page:hover .head__page-nav--ul{
+    display: flex;
+}
+
+.head__page-nav .head__page-nav--ul .nav-ul-list .nav-ul-list--link{
+    padding: 3px;
+    text-align: center;
+}
+
+}

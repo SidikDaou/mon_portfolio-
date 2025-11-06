@@ -1,0 +1,97 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --txt-color: #333;
+    --bg-color: #f1f1f1;
+    --font-gros: bold;
+    --font-size: 24px;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.jcc{
+    justify-content: center;
+}
+
+.jcc-around{
+    justify-content: space-around;
+}
+
+.jcc-between{
+    justify-content: space-between;
+}
+.jcc-evenly{
+    justify-content: space-evenly;
+}
+
+.aic-end{
+    align-items: flex-end;
+}
+
+.aic-start{
+    align-items: flex-start;
+}
+
+.aic{
+    align-items: center;
+}
+
+.gap-5{
+    gap: 5px;
+}
+
+.gap-10{
+    gap: 10px;
+}
+
+.gap-15{
+    gap: 15px;
+}
+
+.gap-20{
+    gap: 20px;
+}
+
+.gap-25{
+    gap: 25px;
+}
+
+.gap-30{
+    gap: 30px;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.unlist{
+    list-style: none;
+}
+
+.decoration-none{
+    text-decoration: none;
+}
+
