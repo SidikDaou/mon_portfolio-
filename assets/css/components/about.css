@@ -1,12 +1,14 @@
 /* About section */
 
 .main__page-section--about{
+    width: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fff;
+    padding-top: 50px;
 }
-
+/*section content and contnaire*/
 .section--about-content{
     width: 60%;
     text-align: center;
@@ -20,7 +22,14 @@
     gap: 20px;
     margin-bottom: 20px;
 }
-
+/*section Title*/
+.section--about-content--title{
+    font-size: 2.6rem;
+    color: var(--txt-color);
+    margin-bottom: 90px;
+    text-shadow: 5px 5px 10px #999;
+}
+/*section image*/
 .section--about-content--img{
     width: 300px;
     height: auto;
@@ -28,6 +37,7 @@
     box-shadow: 5px 5px 15px #999;
     transition: transform 0.3s ease;
 }
+
 .section--about-content--img img{
     width: 100%;
     height: auto;
@@ -41,20 +51,14 @@
 
 }
 
-.section--about-content--title{
-    font-size: 2.6rem;
-    color: var(--txt-color);
-    margin-bottom: 60px;
-    text-shadow: 5px 5px 10px #999;
-}
+/*Section para*/
+
 .section--about-content--para{
     font-size: 1.1em;
     font-weight: bold;
     color: var(--txt-color);
     text-align: justify; /* justifie le texte : bord gauche ET droit bien alignés */
     line-height: 1.3;   
-    
-
 }
 
 .section--about-content--para:hover{
@@ -65,7 +69,7 @@
     box-shadow: 8px 8px 20px #666;
     border-radius: 20px;
 }
-
+/*Responsivite*/
 @media screen and (max-width: 768px) {
 
     .section--about-content{
