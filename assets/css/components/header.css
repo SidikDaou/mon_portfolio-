@@ -110,11 +110,6 @@
 .head__page:hover .head__page-nav,
 .head__page-nav:hover {
     padding:  0;
-   
-}
-
-.head__page-nav .head__page-nav--ul .nav-ul-list .nav-ul-list--link{
-    
 }
 
 .head__page-nav .head__page-nav--ul .nav-ul-list .nav-ul-list--link:hover{
