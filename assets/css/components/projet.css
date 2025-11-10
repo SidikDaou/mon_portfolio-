@@ -1,0 +1,109 @@
+/* projects section */
+.main__page-section--projects{
+    min-height: 100vh;
+    width: 100%;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+/* projects section content and title*/ 
+.section--projects-content{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section--projects-content--title{
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 1px 1px 10px black;
+}
+/* projects section gallery */
+.projects-gallery{
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0 auto;
+}
+/* projects section gallery items */
+.project-item-2:hover, .project-item-1:hover , .project-item-3:hover{
+    box-shadow: 5px 5px 15px #666;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    width: 1600px;
+    height: auto;
+    margin: 0 auto;
+    
+    
+}
+
+
+.project-item-1, .project-item-2, .project-item-3{
+    width: 600px;
+    border: 20px solid #fff;
+}
+
+.project-item--title{
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+/* projects section gallery img */
+.project-item--img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-item-link{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.project-item-link-img{
+    width: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-item-link-img:hover{
+    transform: scale(1.2);
+}
+/* projects section Responsive */
+@media(max-width:900px){
+    .projects-gallery{
+        flex-direction: column;
+        max-width: 100%;
+        padding: 30px;
+        margin: 0 auto;
+    }
+
+    .project-item-2:hover, .project-item-1:hover , .project-item-3:hover{
+        width: 100%;
+    }
+}
+
+@media(max-width:700px){
+
+
+    .project-item-1, .project-item-2, .project-item-3{
+        width: 400px;
+        border: 20px solid #fff;
+        box-shadow: 5px 5px 15px #666;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .project-item--img{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+
+}
+
+
+
