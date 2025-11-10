@@ -1,7 +1,6 @@
 /* About section */
 
 .main__page-section--about{
-    width: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
