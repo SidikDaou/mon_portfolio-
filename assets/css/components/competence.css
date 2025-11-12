@@ -1,0 +1,53 @@
+/*section--skills*/
+
+.main__page-section--skills{
+    background-color: var(--bg-color);
+    padding: 150px ;
+    gap: 100px;
+}
+
+.section--skills-title{
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 1px 1px 10px black;
+}
+
+.section--skills-degre-cont{
+    gap: 50px;   
+}
+
+.skills-degre-cont-1, .skills-degre-cont-2, .skills-degre-cont-3, .skills-degre-cont-4 {
+    width: 200px;
+    height: 200px;
+    background-color:var(--txt-color);
+    color: var(--bg-color);
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px #262626;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.skill-1{
+    padding-top: 20px;
+    border-bottom: 2px solid white ;
+}
+
+.skills-degre-cont-img{
+    width: 100px;
+    padding-top: 20px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+    .section--skills-degre-cont{
+        flex-direction: column;
+    }
+
+    .skills-degre-cont-1, .skills-degre-cont-2, .skills-degre-cont-3, .skills-degre-cont-4 {
+        width: 300px;
+        height: 200px;
+    }
+    
+}
