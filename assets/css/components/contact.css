@@ -1,0 +1,98 @@
+/* Styles for the contact section */
+.main__page-section--contact {
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+}
+
+.section--contact-content {
+  max-width: 920px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 36px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(24, 39, 75, 0.06);
+  text-align: center;
+}
+
+.section--contact-content--title {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  color: #102a43;
+}
+
+.section--contact-content--para {
+  color: #4b5563;
+  font-size: 0.98rem;
+  margin-bottom: 20px;
+}
+
+.section--contact-content--form {
+  display: grid;
+  gap: 14px;
+  align-items: start;
+}
+
+.section--contact-content--form-input,
+.section--contact-content--form-textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e6eef6;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #0f1724;
+  background: #fbfeff;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.section--contact-content--form-input:focus,
+.section--contact-content--form-textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 6px 18px rgba(59,130,246,0.12);
+}
+
+.section--contact-content--form-textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.section--contact-content--form-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: linear-gradient(90deg,#cad1e1,#433c4f 120%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.12s ease;
+  justify-self: center;
+}
+
+.section--contact-content--form-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(124,58,237,0.18);
+}
+
+/* Desktop layout: two columns for inputs, textarea full width */
+@media (min-width: 768px) {
+  .section--contact-content--form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section--contact-content--form-textarea {
+    grid-column: 1 / -1;
+  }
+
+  .section--contact-content--form-btn {
+    grid-column: 1 / -1;
+    width: 180px;
+    margin: 8px auto 0 auto;
+  }
+}
+
+/* Slight spacing tweak for smaller screens */
+@media (max-width: 479px) {
+  .section--contact-content { padding: 26px 14px; }
+  .section--contact-content--title { font-size: 1.5rem; }
+}
