@@ -1,0 +1,8 @@
+/* footer_page */
+
+.footer__page{
+    text-align: center;
+    padding: 10px;
+    background-color: var(--txt-color);
+    color: var(--bg-color);
+}
